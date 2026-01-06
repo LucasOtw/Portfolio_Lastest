@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tous les Projets | Lucas Torres</title>
+    <meta name="description" content="Découvrez l'ensemble des projets réalisés par Lucas Torres.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html#work">Projets</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#journey">Parcours</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle" aria-label="Changer le thème">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <section class="container section-padding projects-header-section">
+            <div class="fade-in-up">
+                <a href="index.html" class="back-link">&larr; Retour à l'accueil</a>
+                <h1 class="projects-main-title">Tous les Projets</h1>
+                <p class="description">Une collection exhaustive de mes travaux en développement et design.</p>
+            </div>
+
+            <div class="projects-grid projects-grid-offset">
+                <!-- Projet 1 -->
+                <article class="project-card fade-in-on-scroll">
+                    <div class="project-image">
+                        <img src="images/project1.svg" alt="Projet E-Commerce Moderne" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Moderne</h3>
+                        <p>Une expérience d'achat fluide avec animations React et gestion d'état complexe.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Tailwind</span>
+                            <span>UX Design</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Projet 2 -->
+                <article class="project-card fade-in-on-scroll">
+                    <div class="project-image">
+                        <img src="images/project2.svg" alt="Projet Dashboard Analytics" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Interface de visualisation de données pour SaaS B2B, focus sur la lisibilité.</p>
+                        <div class="tags">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Sass</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Projet 3 -->
+                <article class="project-card fade-in-on-scroll">
+                    <div class="project-image">
+                        <img src="images/project3.svg" alt="Projet Application Mobile Finance" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Application Mobile Finance</h3>
+                        <p>Design system et intégration pour une application bancaire nouvelle génération.</p>
+                        <div class="tags">
+                            <span>Figma</span>
+                            <span>React Native</span>
+                            <span>Motion</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Projet 4 (Ajouté pour la démo) -->
+                <article class="project-card fade-in-on-scroll">
+                    <div class="project-image">
+                        <img src="images/project1.svg" alt="Portfolio Personnel v1" loading="lazy" class="img-hue-1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Personnel v1</h3>
+                        <p>Première itération de mon portfolio. Minimaliste et brutaliste.</p>
+                        <div class="tags">
+                            <span>HTML/CSS</span>
+                            <span>Jekyll</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet &rarr;</a>
+                    </div>
+                </article>
+
+                 <!-- Projet 5 (Ajouté pour la démo) -->
+                 <article class="project-card fade-in-on-scroll">
+                    <div class="project-image">
+                        <img src="images/project2.svg" alt="App de Tâches" loading="lazy" class="img-hue-2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Master App</h3>
+                        <p>Application de gestion de productivité avec mode focus et statistiques.</p>
+                        <div class="tags">
+                            <span>Svelte</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact container section-padding">
+            <div class="contact-content fade-in-on-scroll">
+                <h2 class="section-title">Intéressé par mon profil ?</h2>
+                <a href="mailto:lucas.torres.otw@gmail.com" class="btn btn-primary big-btn">lucas.torres.otw@gmail.com</a>
+                
+                <footer class="footer">
+                    <p>&copy; 2026 Lucas Torres. Fait avec ♥️</p>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

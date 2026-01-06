@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Torres | Frontend Developer & Interface Designer</title>
+    <meta name="description"
+        content="Portfolio de Lucas Torres, Développeur Front-end et Designer d'Interfaces Humaines.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#work">Projets</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#journey">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle" aria-label="Changer le thème">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content fade-in-up">
+                        <p class="subtitle">Bonjour, je suis Lucas</p>
+                        <h1>Développeur & Designer.</h1>
+                        <p class="description">
+                            Je crée des expériences numériques rapides, élégantes et centrées sur l'humain.
+                            Alliant technique et esthétique pour donner vie à vos idées.
+                        </p>
+                        <div class="cta-group">
+                            <a href="#work" class="btn btn-primary">Voir mes projets</a>
+                            <a href="#contact" class="btn btn-outline">Me contacter</a>
+                        </div>
+                    </div>
+                    <div class="hero-image fade-in-up">
+                        <img src="images/photo1.jpeg" alt="Lucas Torres" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work container section-padding">
+            <div class="projects-header fade-in-on-scroll">
+                <h2 class="section-title">Sélection de projets</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="perso">Personnel</button>
+                    <button class="filter-btn" data-filter="universitaire">Universitaire</button>
+                    <button class="filter-btn" data-filter="entreprise">Entreprise</button>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <article class="project-card fade-in-on-scroll" data-category="perso">
+                    <div class="project-image">
+                        <img src="images/project1.svg" alt="Projet E-Commerce Moderne" loading="lazy">
+                        <span class="project-badge">Personnel</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Moderne</h3>
+                        <p>Une expérience d'achat fluide avec animations React et gestion d'état complexe.</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Tailwind</span>
+                            <span>UX Design</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Projet 2 -->
+                <article class="project-card fade-in-on-scroll" data-category="universitaire">
+                    <div class="project-image">
+                        <img src="images/project2.svg" alt="Projet Dashboard Analytics" loading="lazy">
+                        <span class="project-badge">Universitaire</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Interface de visualisation de données pour SaaS B2B, focus sur la lisibilité.</p>
+                        <div class="tags">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Sass</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Projet 3 -->
+                <article class="project-card fade-in-on-scroll" data-category="entreprise">
+                    <div class="project-image">
+                        <img src="images/project3.svg" alt="Projet Application Mobile Finance" loading="lazy">
+                        <span class="project-badge">Entreprise</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Application Mobile Finance</h3>
+                        <p>Design system et intégration pour une application bancaire nouvelle génération.</p>
+                        <div class="tags">
+                            <span>Figma</span>
+                            <span>React Native</span>
+                            <span>Motion</span>
+                        </div>
+                        <a href="#" class="project-link">Voir le projet &rarr;</a>
+                    </div>
+                </article>
+            </div>
+            <div class="view-all-projects">
+                <a href="projects.html" class="btn btn-outline">Voir tous les projets</a>
+            </div>
+        </section>
+
+        <section id="about" class="about container section-padding">
+            <div class="about-content fade-in-on-scroll">
+                <div class="about-text">
+                    <h2 class="section-title">À propos</h2>
+                    <p>
+                        Étudiant en 3ᵉ année de BUT Informatique à l’IUT de Lannion | Passionné par le développement
+                        web/applications et l’UX/UI design
+                        Passionné par la création d’expériences digitales à la fois fonctionnelles et esthétiques, je me
+                        spécialise dans le développement web et la conception d’interfaces utilisateur intuitives.
+                    </p>
+                    <p>
+                        Grâce à mes projets académiques et personnels, j’ai développé une solide maîtrise de
+                        technologies comme HTML, CSS, JavaScript, PHP, Java, SQL, ainsi que des outils tels que Figma et
+                        Tailwind CSS.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills container section-padding">
+            <h2 class="section-title fade-in-on-scroll">Compétences</h2>
+            <div class="skills-grid fade-in-on-scroll">
+                <!-- React -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/react/2563eb" alt="React Logo">
+                    </div>
+                    <h3>React</h3>
+                </div>
+
+                <!-- Figma -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma Logo">
+                    </div>
+                    <h3>Figma</h3>
+                </div>
+
+                <!-- ClickUp -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/clickup/7B68EE" alt="ClickUp Logo">
+                    </div>
+                    <h3>ClickUp</h3>
+                </div>
+
+                <!-- HTML5 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5 Logo">
+                    </div>
+                    <h3>HTML5</h3>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS3 Logo">
+                    </div>
+                    <h3>CSS3</h3>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript Logo">
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <!-- TypeScript -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript Logo">
+                    </div>
+                    <h3>TypeScript</h3>
+                </div>
+
+                <!-- Ionic -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/ionic/3880FF" alt="Ionic Logo">
+                    </div>
+                    <h3>Ionic</h3>
+                </div>
+
+                <!-- GitHub -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub Logo">
+                    </div>
+                    <h3>GitHub</h3>
+                </div>
+
+                <!-- Java -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/openjdk/5382A1" alt="Java Logo">
+                    </div>
+                    <h3>Java</h3>
+                </div>
+
+                <!-- Tailwind -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind Logo">
+                    </div>
+                    <h3>Tailwind</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey" class="journey container section-padding">
+            <h2 class="section-title fade-in-on-scroll">Mon Parcours</h2>
+            <div class="timeline fade-in-on-scroll">
+                <div class="timeline-line"></div>
+
+                <!-- Item 1: TomExplore -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - Présent</div>
+                    <div class="timeline-content">
+                        <h3>Développeur & Designer</h3>
+                        <span class="company">TomExplore - Vannes</span>
+                        <p>Creation d'une application d'organisation de Voyage</p>
+                        <div class="tags">
+                            <span>React</span>
+                            <span>Ionic</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: BUT Informatique -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2026</div>
+                    <div class="timeline-content">
+                        <h3>BUT Informatique</h3>
+                        <span class="company">IUT Lannion</span>
+                        <p>Formation universitaire en informatique : développement, réseaux, et gestion de projet.</p>
+                        <div class="tags">
+                            <span>Développement</span>
+                            <span>Optimisation</span>
+                            <span>Gestion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container section-padding">
+            <div class="contact-content fade-in-on-scroll">
+                <h2 class="section-title">Travaillons ensemble</h2>
+                <p>Vous avez un projet en tête ou vous voulez simplement dire bonjour ? N'hésitez pas à me contacter.
+                </p>
+                <a href="mailto:lucas.torres.otw@gmail.com"
+                    class="btn btn-primary big-btn">lucas.torres.otw@gmail.com</a>
+
+                <footer class="footer">
+                    <p>&copy; 2026 Lucas Torres. Fait avec ♥️</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/lucastorres14/">LinkedIn</a>
+                        <a href="https://github.com/LucasOtw">GitHub</a>
+                        <a href="https://x.com/_LuCaS_tS_">Twitter</a>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- CV Download Popup -->
+    <div class="cv-popup" id="cvPopup">
+        <button class="cv-popup-close" id="cvPopupClose">&times;</button>
+        <h4>Téléchargez mon CV</h4>
+        <p>Découvrez mon parcours et mes compétences en détail.</p>
+        <a href="LucasCv.pdf" download="Lucas_Torres_CV.pdf" class="btn btn-primary">Télécharger CV</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
