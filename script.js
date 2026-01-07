@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: "DeepPace",
-            description: "Design system et intégration pour une application bancaire nouvelle génération.",
+            description: "Tableau de bord avec analyse de vos données Strava",
             image: "images/project3.svg",
-            tags: ["Figma", "React Native", "Motion"],
+            tags: ["Vue.JS", "Laravel", "API"],
             link: "#",
             category: "personnel",
             categoryDisplay: "Personnel"
@@ -78,7 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clear existing content
         projectsContainer.innerHTML = '';
 
-        PROJECTS_DATA.forEach(project => {
+        // Check if on home page to limit to 3 projects
+        const isHomePage = globalThis.location.pathname.endsWith('index.html') || globalThis.location.pathname === '/' || globalThis.location.pathname.endsWith('/');
+        const projectsToShow = isHomePage ? PROJECTS_DATA.slice(0, 3) : PROJECTS_DATA;
+
+        projectsToShow.forEach(project => {
             const article = document.createElement('article');
             article.className = 'project-card fade-in-on-scroll';
             article.dataset.category = project.category;
