@@ -1,4 +1,117 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Project Data Configuration
+    const PROJECTS_DATA = [
+        {
+            title: "E-Commerce Moderne",
+            description: "Une expérience d'achat fluide avec animations React et gestion d'état complexe.",
+            image: "images/project1.svg",
+            tags: ["React", "Tailwind", "UX Design"],
+            link: "#",
+            category: "perso",
+            categoryDisplay: "Personnel"
+        },
+        {
+            title: "Dashboard Analytics",
+            description: "Interface de visualisation de données pour SaaS B2B, focus sur la lisibilité.",
+            image: "images/project2.svg",
+            tags: ["Vue.js", "D3.js", "Sass"],
+            link: "#",
+            category: "universitaire",
+            categoryDisplay: "Universitaire"
+        },
+        {
+            title: "Application Mobile Finance",
+            description: "Design system et intégration pour une application bancaire nouvelle génération.",
+            image: "images/project3.svg",
+            tags: ["Figma", "React Native", "Motion"],
+            link: "#",
+            category: "entreprise",
+            categoryDisplay: "Entreprise"
+        },
+        {
+            title: "Portfolio Personnel v1",
+            description: "Première itération de mon portfolio. Minimaliste et brutaliste.",
+            image: "images/project1.svg",
+            tags: ["HTML/CSS", "Jekyll"],
+            link: "#",
+            imgClass: "img-hue-1",
+            category: "perso",
+            categoryDisplay: "Personnel"
+        },
+        {
+            title: "Task Master App",
+            description: "Application de gestion de productivité avec mode focus et statistiques.",
+            image: "images/project2.svg",
+            tags: ["Svelte", "Firebase"],
+            link: "#",
+            imgClass: "img-hue-2",
+            category: "perso",
+            categoryDisplay: "Personnel"
+        }
+    ];
+
+    // Scroll Reveal Animation
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const fadeElements = document.querySelectorAll('.fade-in-on-scroll');
+    fadeElements.forEach(el => observer.observe(el));
+
+    // Render Projects Function
+    const renderProjects = () => {
+        const projectsContainer = document.querySelector('.projects-grid');
+        if (!projectsContainer) return;
+
+        // Clear existing content
+        projectsContainer.innerHTML = '';
+
+        PROJECTS_DATA.forEach(project => {
+            const article = document.createElement('article');
+            article.className = 'project-card fade-in-on-scroll';
+            article.dataset.category = project.category;
+            
+            const imgClass = project.imgClass ? ` class="${project.imgClass}"` : '';
+            const tagsHtml = project.tags.map(tag => `<span>${tag}</span>`).join('');
+            
+            const badgeHtml = project.categoryDisplay ? `<span class="project-badge">${project.categoryDisplay}</span>` : '';
+
+            article.innerHTML = `
+                <div class="project-image">
+                    <img src="${project.image}" alt="${project.title}" loading="lazy"${imgClass}>
+                    ${badgeHtml}
+                </div>
+                <div class="project-info">
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                    <div class="tags">
+                        ${tagsHtml}
+                    </div>
+                    <a href="${project.link}" class="project-link">Voir le projet &rarr;</a>
+                </div>
+            `;
+
+            projectsContainer.appendChild(article);
+            
+            // Observe the newly created element
+            observer.observe(article);
+        });
+    };
+
+    // Initialize Projects
+    renderProjects();
+
     // Custom Cursor
     const cursor = document.createElement('div');
     cursor.classList.add('cursor');
@@ -90,25 +203,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', showPopupOnScroll);
     }
     
-    // Scroll Reveal Animation
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    const fadeElements = document.querySelectorAll('.fade-in-on-scroll');
-    fadeElements.forEach(el => observer.observe(el));
-
     // Dark Mode Toggle
     const themeToggle = document.querySelector('.theme-toggle');
     const body = document.body;
