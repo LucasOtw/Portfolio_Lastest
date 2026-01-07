@@ -2,31 +2,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // Project Data Configuration
     const PROJECTS_DATA = [
         {
-            title: "E-Commerce Moderne",
-            description: "Une expérience d'achat fluide avec animations React et gestion d'état complexe.",
+            title: "TripEnArvor",
+            description: "Un site web pour trouver et poster des activités dans des villes françaises.",
             image: "images/project1.svg",
-            tags: ["React", "Tailwind", "UX Design"],
-            link: "#",
-            category: "perso",
-            categoryDisplay: "Personnel"
-        },
-        {
-            title: "Dashboard Analytics",
-            description: "Interface de visualisation de données pour SaaS B2B, focus sur la lisibilité.",
-            image: "images/project2.svg",
-            tags: ["Vue.js", "D3.js", "Sass"],
+            tags: ["Php", "Css", "Figma", "Agile"],
             link: "#",
             category: "universitaire",
             categoryDisplay: "Universitaire"
         },
         {
-            title: "Application Mobile Finance",
+            title: "TomExplore",
+            description: "Application pour créer son voyage en 2min !",
+            image: "images/TomExplore.jpeg",
+            tags: ["Ionic", "React", "Figma", "Css", "Clickup"],
+            link: "#",
+            category: "entreprise",
+            categoryDisplay: "Entreprise",
+            imgClass: "img-tomexplore"
+        },
+        {
+            title: "DeepPace",
             description: "Design system et intégration pour une application bancaire nouvelle génération.",
             image: "images/project3.svg",
             tags: ["Figma", "React Native", "Motion"],
             link: "#",
-            category: "entreprise",
-            categoryDisplay: "Entreprise"
+            category: "personnel",
+            categoryDisplay: "Personnel"
         },
         {
             title: "Portfolio Personnel v1",
