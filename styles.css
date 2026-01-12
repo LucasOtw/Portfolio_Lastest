@@ -351,6 +351,9 @@ ul {
     color: white;
 }
 
+.mobile-logo {
+    display: none;
+}
 
 .hero {
     min-height: 100vh;
