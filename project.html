@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tous les Projets | Lucas Torres</title>
-    <meta name="description" content="Découvrez l'ensemble des projets réalisés par Lucas Torres.">
+    <title>Détails du Projet | Lucas Torres</title>
+    <meta name="description" content="Détails du projet réalisé par Lucas Torres.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -20,7 +20,6 @@
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="index.html" class="mobile-logo">Lucas Torres</a>
         <button class="theme-toggle" aria-label="Changer le thème">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -38,15 +37,14 @@
     </header>
 
     <main>
-        <section class="container section-padding projects-header-section">
+        <section class="container section-padding project-details-section">
             <div class="fade-in-up">
-                <a href="index.html" class="back-link">&larr; Retour à l'accueil</a>
-                <h1 class="projects-main-title">Tous les Projets</h1>
-                <p class="description">Une collection exhaustive de mes travaux en développement et design.</p>
+                <a href="index.html#work" class="back-link">&larr; Retour aux projets</a>
             </div>
-
-            <div class="projects-grid projects-grid-offset">
-                <!-- Les projets sont générés dynamiquement par script.js -->
+            
+            <div id="project-details-container" class="project-details-container fade-in-up">
+                <!-- Content will be injected by JavaScript -->
+                <div class="loading-state">Chargement du projet...</div>
             </div>
         </section>
 
@@ -58,9 +56,9 @@
                 <footer class="footer">
                     <p>&copy; 2026 Lucas Torres. Fait avec ♥️</p>
                     <div class="social-links">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">GitHub</a>
-                        <a href="#">Twitter</a>
+                        <a href="https://www.linkedin.com/in/lucastorres14/">LinkedIn</a>
+                        <a href="https://github.com/LucasOtw">GitHub</a>
+                        <a href="https://x.com/_LuCaS_tS_">Twitter</a>
                     </div>
                 </footer>
             </div>
