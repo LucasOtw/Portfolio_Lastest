@@ -17,7 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
             repoLink: "https://github.com/LucasOtw",
             liveLink: "#",
             category: "universitaire",
-            categoryDisplay: "Universitaire"
+            categoryDisplay: "Universitaire",
+            roles: [
+                "Maquettage de l'interface",
+                "Développement Front-end",
+                "Développement Back-end"
+            ]
         },
         {
             id: "tomexplore",
@@ -36,7 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
             liveLink: "#",
             category: "entreprise",
             categoryDisplay: "Entreprise",
-            imgClass: "img-tomexplore"
+            imgClass: "img-tomexplore",
+            roles: [
+                "Design UX/UI",
+                "Développement Mobile",
+                "Intégration API"
+            ]
         },
         {
             id: "deeppace",
@@ -54,7 +64,12 @@ document.addEventListener('DOMContentLoaded', () => {
             repoLink: "https://github.com/LucasOtw",
             liveLink: "#",
             category: "perso",
-            categoryDisplay: "Personnel"
+            categoryDisplay: "Personnel",
+            roles: [
+                "Architecture Fullstack",
+                "Développement Front-end",
+                "Visualisation de données"
+            ]
         },
         {
             id: "sudoku",
@@ -73,7 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
             liveLink: "#",
             imgClass: "img-hue-1",
             category: "perso",
-            categoryDisplay: "Personnel"
+            categoryDisplay: "Personnel",
+            roles: [
+                "Développement C",
+                "Algorithmique",
+                "Documentation"
+            ]
         },
         {
             id: "taskmaster",
@@ -92,7 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
             liveLink: "#",
             imgClass: "img-hue-2",
             category: "perso",
-            categoryDisplay: "Personnel"
+            categoryDisplay: "Personnel",
+            roles: [
+                "Développement Front-end",
+                "Intégration Firebase",
+                "Design UI"
+            ]
         }
     ];
 
@@ -210,6 +235,11 @@ document.addEventListener('DOMContentLoaded', () => {
             `<ul class="project-features-list">
                 ${project.features.map(feature => `<li>${feature}</li>`).join('')}
              </ul>` : '';
+
+        const rolesHtml = project.roles ? 
+            `<ul class="project-features-list">
+                ${project.roles.map(role => `<li>${role}</li>`).join('')}
+             </ul>` : '';
         
         const imgClass = project.imgClass ? ` class="${project.imgClass}"` : '';
         
@@ -246,6 +276,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="project-features">
                             <h3>Fonctionnalités clés</h3>
                             ${featuresHtml}
+                        </div>
+                    ` : ''}
+
+                    ${rolesHtml ? `
+                        <div class="project-features">
+                            <h3>Mon rôle</h3>
+                            ${rolesHtml}
                         </div>
                     ` : ''}
 
