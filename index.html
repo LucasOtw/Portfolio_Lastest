@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Torres | Frontend Developer & Interface Designer</title>
+    <title>Lucas Torres | UX/UI Designer</title>
     <meta name="description"
-        content="Portfolio de Lucas Torres, Développeur Front-end et Designer d'Interfaces Humaines.">
+        content="Portfolio de Lucas Torres, Designer UX/UI spécialisé dans les interfaces mobiles et le design d'interaction.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,7 @@
         <nav class="nav">
             <ul class="nav-links">
                 <li><a href="#work">Projets</a></li>
+                <li><a href="#approche">Approche</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#journey">Parcours</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -47,13 +48,13 @@
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-content fade-in-up">
-                        <p class="subtitle">Bonjour, je suis Lucas</p>
-                        <h1>Développeur & Designer.</h1>
+                        <p class="subtitle">Designer UX/UI</p>
+                        <h1>Je conçois des interfaces centrées sur l'utilisateur.</h1>
                         <p class="description">
-                            Étudiant en alternance chez TomExplore, je compte me spécialiser en master Design/UX/UI en alliant développement technique et design.
+                            Étudiant en alternance chez TomExplore, je conçois des interfaces mobiles intuitives. Recherche utilisateur, prototypage itératif et design d'interaction — je me spécialise en master UX/UI.
                         </p>
                         <div class="cta-group">
-                            <a href="#work" class="btn btn-primary">Voir mes projets</a>
+                            <a href="#work" class="btn btn-primary">Voir mes études de cas</a>
                             <a href="#contact" class="btn btn-outline">Me contacter</a>
                         </div>
                     </div>
@@ -66,19 +67,42 @@
 
         <section id="work" class="work container section-padding">
             <div class="projects-header fade-in-on-scroll">
-                <h2 class="section-title">Sélection de projets</h2>
-                <div class="project-filters">
-                    <button class="filter-btn active" data-filter="all">Tous</button>
-                    <button class="filter-btn" data-filter="perso">Personnel</button>
-                    <button class="filter-btn" data-filter="universitaire">Universitaire</button>
-                    <button class="filter-btn" data-filter="entreprise">Entreprise</button>
-                </div>
+                <h2 class="section-title">Études de cas</h2>
             </div>
             <div class="projects-grid">
                 <!-- Les projets sont générés dynamiquement par script.js -->
             </div>
             <div class="view-all-projects">
-                <a href="projects.html" class="btn btn-outline">Voir tous les projets</a>
+                <a href="projects.html" class="btn btn-outline">Voir toutes les études de cas</a>
+            </div>
+        </section>
+
+        <section id="approche" class="approche container section-padding">
+            <h2 class="section-title fade-in-on-scroll">Mon approche</h2>
+            <p class="approche-intro fade-in-on-scroll">
+                Un bon design naît d’une compréhension profonde des utilisateurs. Chaque projet suit un processus itératif en quatre phases.
+            </p>
+            <div class="approche-grid fade-in-on-scroll">
+                <div class="approche-step">
+                    <div class="step-number">01</div>
+                    <h3>Recherche</h3>
+                    <p>Comprendre les utilisateurs, leurs besoins et le contexte d’usage par des entretiens et de l’observation.</p>
+                </div>
+                <div class="approche-step">
+                    <div class="step-number">02</div>
+                    <h3>Idéation</h3>
+                    <p>Explorer les possibilités par le sketching, les wireframes et la co-conception.</p>
+                </div>
+                <div class="approche-step">
+                    <div class="step-number">03</div>
+                    <h3>Prototypage</h3>
+                    <p>Donner forme aux idées avec des prototypes interactifs sur Figma pour tester rapidement.</p>
+                </div>
+                <div class="approche-step">
+                    <div class="step-number">04</div>
+                    <h3>Tests & Itération</h3>
+                    <p>Valider les hypothèses avec de vrais utilisateurs et itérer jusqu’à la solution optimale.</p>
+                </div>
             </div>
         </section>
 
@@ -87,156 +111,92 @@
                 <div class="about-text">
                     <h2 class="section-title">À propos</h2>
                     <p>
-                        Étudiant en 3ᵉ année de BUT Informatique à l’IUT de Lannion | Passionné par le développement
-                        web/applications et l’UX/UI design
-                        Passionné par la création d’expériences digitales à la fois fonctionnelles et esthétiques, je me
-                        spécialise dans le développement web et la conception d’interfaces utilisateur intuitives.
+                        Étudiant en 3ᵉ année de BUT Informatique à l’IUT de Lannion, je suis passionné par la création d’expériences digitales centrées sur l’humain. Je conçois des interfaces qui répondent à de vrais besoins utilisateurs, en alliant esthétique et fonctionnalité.
                     </p>
                     <p>
-                        Grâce à mes projets académiques et personnels, j’ai développé une solide maîtrise de
-                        technologies comme HTML, CSS, JavaScript, PHP, Java, SQL, ainsi que des outils tels que Figma et
-                        Tailwind CSS.
+                        En alternance chez TomExplore, j’ai développé une expertise en recherche utilisateur, prototypage sur Figma et design d’interaction — notamment autour des retours haptiques sur mobile.
+                    </p>
+                    <p>
+                        Je développe actuellement une spécialisation en UX/UI design, notamment autour des interfaces mobiles et du design haptique.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="skills container section-padding">
-            <h2 class="section-title fade-in-on-scroll">Les technologies</h2>
-            <div class="skills-grid fade-in-on-scroll">
-                <!-- React -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/react/2563eb" alt="React Logo">
+        <section id="outils" class="outils container section-padding">
+            <h2 class="section-title fade-in-on-scroll">Outils & Méthodes</h2>
+            <div class="outils-grid fade-in-on-scroll">
+                <div class="outil-category">
+                    <h3>Design & Prototypage</h3>
+                    <div class="outil-items">
+                        <div class="outil-card">
+                            <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma">
+                            <span>Figma</span>
+                        </div>
+                        <div class="outil-card">
+                            <span>Wireframing</span>
+                        </div>
+                        <div class="outil-card">
+                            <span>Prototypage interactif</span>
+                        </div>
+                        <div class="outil-card">
+                            <span>Design System</span>
+                        </div>
                     </div>
-                    <h3>React</h3>
                 </div>
-
-                <!-- Figma -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma Logo">
+                <div class="outil-category">
+                    <h3>Recherche & Tests</h3>
+                    <div class="outil-items">
+                        <div class="outil-card">
+                            <span>Tests utilisateurs</span>
+                        </div>
+                        <div class="outil-card">
+                            <span>Entretiens</span>
+                        </div>
+                        <div class="outil-card">
+                            <span>Personas</span>
+                        </div>
+                        <div class="outil-card">
+                            <span>Audit heuristique</span>
+                        </div>
                     </div>
-                    <h3>Figma</h3>
                 </div>
-
-                <!-- ClickUp -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/clickup/7B68EE" alt="ClickUp Logo">
+                <div class="outil-category">
+                    <h3>Gestion de projet</h3>
+                    <div class="outil-items">
+                        <div class="outil-card">
+                            <img src="https://cdn.simpleicons.org/clickup/7B68EE" alt="ClickUp">
+                            <span>ClickUp</span>
+                        </div>
+                        <div class="outil-card">
+                            <img src="https://cdn.simpleicons.org/trello/0052CC" alt="Trello">
+                            <span>Trello</span>
+                        </div>
+                        <div class="outil-card">
+                            <span>Agile / Scrum</span>
+                        </div>
                     </div>
-                    <h3>ClickUp</h3>
                 </div>
-
-                <!-- HTML5 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5 Logo">
+                <div class="outil-category">
+                    <h3>Intégration</h3>
+                    <div class="outil-items">
+                        <div class="outil-card">
+                            <img src="https://cdn.simpleicons.org/react/2563eb" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="outil-card">
+                            <img src="https://cdn.simpleicons.org/ionic/3880FF" alt="Ionic">
+                            <span>Ionic</span>
+                        </div>
+                        <div class="outil-card">
+                            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML/CSS">
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="outil-card">
+                            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind">
+                            <span>Tailwind</span>
+                        </div>
                     </div>
-                    <h3>HTML5</h3>
-                </div>
-
-                <!-- CSS3 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS3 Logo">
-                    </div>
-                    <h3>CSS3</h3>
-                </div>
-
-                <!-- JavaScript -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript Logo">
-                    </div>
-                    <h3>JavaScript</h3>
-                </div>
-
-                <!-- TypeScript -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript Logo">
-                    </div>
-                    <h3>TypeScript</h3>
-                </div>
-
-                <!-- Ionic -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/ionic/3880FF" alt="Ionic Logo">
-                    </div>
-                    <h3>Ionic</h3>
-                </div>
-
-                <!-- GitHub -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub Logo">
-                    </div>
-                    <h3>GitHub</h3>
-                </div>
-
-                <!-- Java -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/openjdk/5382A1" alt="Java Logo">
-                    </div>
-                    <h3>Java</h3>
-                </div>
-
-                <!-- Tailwind -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind Logo">
-                    </div>
-                    <h3>Tailwind</h3>
-                </div>
-            </div>
-        </section>
-
-        <section id="but-competencies" class="but-competencies container section-padding">
-            <h2 class="section-title fade-in-on-scroll">Compétences BUT Informatique</h2>
-            <div class="but-competencies-grid fade-in-on-scroll">
-                <div class="but-competency-card">
-                    <div class="competency-number">3</div>
-                    <h3>Administrer</h3>
-                    <p class="competency-type">Commun aux 3 années</p>
-                    <p>Installer et configurer un poste de travail</p>
-                </div>
-
-                <div class="but-competency-card">
-                    <div class="competency-number">4</div>
-                    <h3>Gérer</h3>
-                    <p class="competency-type">Commun aux 3 années</p>
-                    <p>Concevoir, gérer, administrer et exploiter les données</p>
-                </div>
-
-                <div class="but-competency-card">
-                    <div class="competency-number">5</div>
-                    <h3>Conduire</h3>
-                    <p class="competency-type">Commun aux 3 années</p>
-                    <p>Satisfaire les besoins des utilisateurs</p>
-                </div>
-
-                <div class="but-competency-card">
-                    <div class="competency-number">1</div>
-                    <h3>Réaliser</h3>
-                    <p class="competency-type">Spécifique parcours A</p>
-                    <p>Développer des applications informatiques simples</p>
-                </div>
-
-                <div class="but-competency-card">
-                    <div class="competency-number">2</div>
-                    <h3>Optimiser</h3>
-                    <p class="competency-type">Spécifique parcours A</p>
-                    <p>Appréhender et construire des algorithmes</p>
-                </div>
-
-                <div class="but-competency-card">
-                    <div class="competency-number">6</div>
-                    <h3>Collaborer</h3>
-                    <p class="competency-type">Spécifique parcours A</p>
-                    <p>Travailler efficacement dans une équipe informatique</p>
                 </div>
             </div>
         </section>
@@ -251,13 +211,13 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2025 - Présent</div>
                     <div class="timeline-content">
-                        <h3>Développeur & Designer</h3>
+                        <h3>UX/UI Designer</h3>
                         <span class="company">TomExplore - Vannes</span>
-                        <p>Creation d'une application d'organisation de Voyage</p>
+                        <p>Conception des interfaces de l'application mobile de planification de voyage. Recherche utilisateur, prototypage Figma et intégration de retours haptiques.</p>
                         <div class="tags">
-                            <span>React</span>
-                            <span>Ionic</span>
-                            <span>Figma</span>
+                            <span>UX Research</span>
+                            <span>Prototypage</span>
+                            <span>Design mobile</span>
                         </div>
                     </div>
                 </div>
@@ -267,13 +227,13 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2025</div>
                     <div class="timeline-content">
-                        <h3>Stage Développeur & Designer</h3>
+                        <h3>Stage UX/UI Designer</h3>
                         <span class="company">TomExplore - Vannes</span>
-                        <p>Stage de 6 mois</p>
+                        <p>Stage de 6 mois — Design d'interfaces et tests utilisateurs</p>
                         <div class="tags">
-                            <span>React</span>
-                            <span>Ionic</span>
                             <span>Figma</span>
+                            <span>Tests utilisateurs</span>
+                            <span>Design System</span>
                         </div>
                     </div>
                 </div>
@@ -285,11 +245,11 @@
                     <div class="timeline-content">
                         <h3>BUT Informatique</h3>
                         <span class="company">IUT Lannion</span>
-                        <p>Formation universitaire en informatique : développement, réseaux, et gestion de projet.</p>
+                        <p>Formation universitaire en informatique avec spécialisation progressive en conception d'interfaces et design d'interaction.</p>
                         <div class="tags">
-                            <span>Développement</span>
-                            <span>Optimisation</span>
-                            <span>Gestion</span>
+                            <span>Conception</span>
+                            <span>Interfaces</span>
+                            <span>Gestion de projet</span>
                         </div>
                     </div>
                 </div>
@@ -301,8 +261,8 @@
                 <h2 class="section-title">Travaillons ensemble</h2>
                 <p>Vous avez un projet en tête ou vous voulez simplement dire bonjour ? N'hésitez pas à me contacter.
                 </p>
-                <a href="mailto:lucas.torres.otw@gmail.com"
-                    class="btn btn-primary big-btn">lucas.torres.otw@gmail.com</a>
+                <a href="mailto:lucas_torres14@icloud.com"
+                    class="btn btn-primary big-btn">lucas_torres14@icloud.com</a>
 
                 <footer class="footer">
                     <p>&copy; 2026 Lucas Torres. Fait avec ♥️</p>

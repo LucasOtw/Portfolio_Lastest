@@ -546,9 +546,9 @@ ul {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
 
 .project-card {
@@ -653,6 +653,181 @@ ul {
     gap: 0.75rem;
 }
 
+/* Case Study Cards */
+.case-study-link {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card:nth-child(even) .case-study-link {
+    grid-template-columns: 1fr 1.2fr;
+}
+
+.project-card:nth-child(even) .case-study-image {
+    order: 2;
+}
+
+.project-card:nth-child(even) .case-study-info {
+    order: 1;
+}
+
+.case-study-image {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.case-study-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.case-study-image img.img-tomexplore {
+    object-position: 40% center;
+}
+
+.case-study-link:hover .case-study-image img {
+    transform: scale(1.03);
+}
+
+.case-study-category {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+}
+
+.case-study-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-serif);
+    line-height: 1.2;
+}
+
+.case-study-info p {
+    color: var(--secondary-text);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.case-study-cta {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.3s ease, color 0.3s ease;
+}
+
+.case-study-link:hover .case-study-cta {
+    gap: 0.75rem;
+    color: var(--accent-color);
+}
+
+/* Approche Section */
+.approche-intro {
+    max-width: 700px;
+    color: var(--secondary-text);
+    font-size: 1.15rem;
+    margin-bottom: 3rem;
+}
+
+.approche-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.approche-step {
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background: var(--card-bg);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.approche-step:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .approche-step:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.step-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    opacity: 0.3;
+    margin-bottom: 1rem;
+    font-family: var(--font-serif);
+}
+
+.approche-step h3 {
+    margin-bottom: 0.75rem;
+}
+
+.approche-step p {
+    color: var(--secondary-text);
+    font-size: 0.95rem;
+}
+
+/* Outils & Méthodes Section */
+.outils-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.outil-category h3 {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.outil-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.outil-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 0.9rem;
+    transition: border-color var(--transition-base);
+}
+
+.outil-card:hover {
+    border-color: var(--accent-color);
+}
+
+.outil-card img {
+    width: 20px;
+    height: 20px;
+}
+
 
 .about-content {
     max-width: 800px;
@@ -663,160 +838,9 @@ ul {
 }
 
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
+/* Legacy skills-grid kept for projects.html compatibility */
 
-.skill-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 16px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
-    border-color: var(--accent-color);
-}
-
-.skill-icon {
-    width: 64px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.skill-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.skill-card:hover .skill-icon img {
-    transform: scale(1.1);
-}
-
-.skill-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0;
-    font-weight: 600;
-    color: var(--text-color);
-}
-
-.but-competencies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.but-competency-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 24px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-}
-
-/* Subtle gradient overlay on hover */
-.but-competency-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, transparent 0%, rgba(37, 99, 235, 0.03) 100%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
-}
-
-.but-competency-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
-    border-color: var(--accent-color);
-}
-
-.but-competency-card:hover::after {
-    opacity: 1;
-}
-
-.competency-number {
-    width: 50px;
-    height: 50px;
-    border-radius: 16px;
-    background-color: var(--bg-color);
-    color: var(--accent-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 800;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--border-color);
-    margin-bottom: 0.5rem;
-    transition: all 0.3s ease;
-}
-
-.but-competency-card:hover .competency-number {
-    background-color: var(--accent-color);
-    color: white;
-    border-color: var(--accent-color);
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
-}
-
-.but-competency-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0;
-    font-weight: 700;
-    color: var(--text-color);
-    letter-spacing: -0.02em;
-}
-
-.competency-type {
-    display: inline-flex;
-    align-items: center;
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    background-color: rgba(37, 99, 235, 0.08);
-    padding: 0.4rem 0.8rem;
-    border-radius: 50px;
-    align-self: flex-start;
-}
-
-[data-theme="dark"] .competency-type {
-    background-color: rgba(96, 165, 250, 0.15);
-}
-
-.but-competency-card > p:last-child {
-    color: var(--secondary-text);
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-}
+/* BUT competencies section removed */
 
 .timeline {
     position: relative;
@@ -1015,14 +1039,29 @@ ul {
         order: -1;
     }
 
-    .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    .case-study-link {
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
+    .project-card:nth-child(even) .case-study-link {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card:nth-child(even) .case-study-image {
+        order: 0;
+    }
+
+    .project-card:nth-child(even) .case-study-info {
+        order: 0;
+    }
+
+    .approche-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .outils-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1195,109 +1234,58 @@ ul {
         margin-bottom: 2rem;
     }
 
-    .project-filters {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 0.75rem;
-        gap: 0.5rem;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-
-    .project-filters::-webkit-scrollbar {
-        display: none;
-    }
-
-    .filter-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.85rem;
-        white-space: nowrap;
-        flex-shrink: 0;
-    }
-
     .projects-grid {
+        gap: 3rem;
+    }
+
+    .case-study-link {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
-    .project-image {
-        border-radius: 10px;
-        margin-bottom: 1rem;
+    .project-card:nth-child(even) .case-study-link {
+        grid-template-columns: 1fr;
     }
 
-    .project-info h3 {
-        font-size: 1.2rem;
+    .project-card:nth-child(even) .case-study-image,
+    .project-card:nth-child(even) .case-study-info {
+        order: 0;
     }
 
-    .project-info p {
-        font-size: 0.9rem;
+    .case-study-info h3 {
+        font-size: 1.4rem;
     }
 
-    .tags {
-        gap: 0.4rem;
-        margin-bottom: 1rem;
+    .case-study-info p {
+        font-size: 0.95rem;
     }
 
-    .tags span {
-        font-size: 0.7rem;
-        padding: 0.2rem 0.6rem;
+    .case-study-image {
+        border-radius: 12px;
     }
 
     .view-all-projects {
         margin-top: 2.5rem;
     }
 
-    /* === SKILLS SECTION === */
-    .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.75rem;
-    }
-
-    .skill-card {
-        padding: 1rem;
-        border-radius: 12px;
-    }
-
-    .skill-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .skill-card h3 {
-        font-size: 0.8rem;
-    }
-
-    /* === BUT COMPETENCIES === */
-    .but-competencies-grid {
-        grid-template-columns: 1fr;
+    /* === APPROCHE SECTION === */
+    .approche-grid {
+        grid-template-columns: 1fr 1fr;
         gap: 1.25rem;
     }
 
-    .but-competency-card {
+    .approche-step {
         padding: 1.5rem;
-        border-radius: 12px;
     }
 
-    .competency-number {
-        width: 40px;
-        height: 40px;
-        font-size: 1.25rem;
-        border-radius: 10px;
+    .step-number {
+        font-size: 2rem;
     }
 
-    .but-competency-card h3 {
-        font-size: 1.2rem;
-    }
-
-    .competency-type {
-        font-size: 0.75rem;
-    }
-
-    .but-competency-card > p:last-child {
-        font-size: 0.9rem;
+    /* === OUTILS SECTION === */
+    .outils-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     /* === TIMELINE / PARCOURS === */
@@ -1519,8 +1507,8 @@ ul {
         height: 150px;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .approche-grid {
+        grid-template-columns: 1fr;
     }
 
     .tech-grid {
@@ -1783,6 +1771,193 @@ ul {
     font-size: 0.8rem;
     color: var(--secondary-text);
 }
+
+/* ===========================================
+   DESIGN PROCESS SECTION
+   =========================================== */
+
+.design-process-section {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.design-process-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.design-process-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--secondary-text);
+    margin-bottom: 3rem;
+    max-width: 700px;
+}
+
+/* Design Screens */
+.design-screens {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.design-screen-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+}
+
+.comparison-slider {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/10;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-image {
+    position: absolute;
+    inset: 0;
+}
+
+.comparison-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.comparison-before {
+    z-index: 2;
+    clip-path: inset(0 50% 0 0);
+}
+
+.comparison-after {
+    z-index: 1;
+}
+
+.comparison-range {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    opacity: 0;
+    cursor: ew-resize;
+    margin: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.comparison-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.comparison-handle-line {
+    flex: 1;
+    width: 3px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+.comparison-handle-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    color: var(--text-color);
+    flex-shrink: 0;
+}
+
+.comparison-handle-circle svg {
+    flex-shrink: 0;
+}
+
+.comparison-label {
+    position: absolute;
+    bottom: 1rem;
+    padding: 0.4rem 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 50px;
+    z-index: 5;
+    pointer-events: none;
+    letter-spacing: 0.02em;
+}
+
+.comparison-label-before {
+    left: 1rem;
+}
+
+.comparison-label-after {
+    right: 1rem;
+}
+
+/* Mobile adjustments for design section */
+@media (max-width: 768px) {
+    .design-process-section {
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+    }
+
+    .design-process-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .design-process-desc {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .design-screens {
+        gap: 2rem;
+    }
+
+    .comparison-slider {
+        aspect-ratio: 4/3;
+        border-radius: 12px;
+    }
+
+    .comparison-handle-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .comparison-handle-circle svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .comparison-label {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.75rem;
+        bottom: 0.75rem;
+    }
+}
+
 
 @media (max-width: 968px) {
     .project-content-grid {

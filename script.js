@@ -2,96 +2,218 @@ document.addEventListener('DOMContentLoaded', () => {
     // Project Data Configuration
     const PROJECTS_DATA = [
         {
+            id: "tomexplore",
+            title: "TomExplore — Concevoir l'expérience de planification de voyage",
+            description: "Comment simplifier la planification de voyage pour des utilisateurs pressés ? Recherche utilisateur, prototypage itératif et design d'interaction haptique pour créer une expérience mobile intuitive.",
+            longDescription: "Comment simplifier la planification de voyage pour des utilisateurs pressés ? Ce projet m'a permis de mener un processus complet de design : recherche utilisateur, wireframes, prototypes interactifs sur Figma, tests et itérations. J'ai conçu et intégré des retours haptiques pour améliorer la perception des interactions tactiles.",
+            image: "images/TomExplore.jpeg",
+            tags: ["React", "Ionic", "Figma"],
+            repoLink: "https://github.com/LucasOtw",
+            liveLink: "#",
+            category: "entreprise",
+            categoryDisplay: "Entreprise",
+            imgClass: "img-tomexplore",
+            caseStudy: {
+                challenge: "Les utilisateurs passent en moyenne 3 à 5 heures à planifier un voyage. TomExplore devait réduire ce temps à quelques minutes, avec une expérience mobile fluide et engageante.",
+                role: "UX/UI Designer & Développeur Front-end — en charge de la recherche utilisateur, du design d'interface et de l'intégration.",
+                duration: "6 mois (stage) + alternance",
+                process: [
+                    {
+                        step: "Recherche",
+                        title: "Comprendre les voyageurs",
+                        description: "Entretiens avec 10+ utilisateurs potentiels pour identifier les pain points de la planification de voyage. Création de personas et cartographie du parcours utilisateur."
+                    },
+                    {
+                        step: "Idéation",
+                        title: "Explorer les solutions",
+                        description: "Sessions de sketching et wireframing basse fidélité. Exploration de différents flows de navigation et architectures d'information."
+                    },
+                    {
+                        step: "Prototypage",
+                        title: "Donner forme au design",
+                        description: "Prototypes interactifs haute fidélité sur Figma. Intégration de retours haptiques pour renforcer la perception des interactions tactiles (swipe, validation, transitions)."
+                    },
+                    {
+                        step: "Tests & Itération",
+                        title: "Valider avec les utilisateurs",
+                        description: "Tests utilisateurs sur prototype, itérations basées sur les retours. Ajustements de la hiérarchie visuelle et des micro-interactions."
+                    }
+                ],
+                results: [
+                    "Interface testée et validée par des utilisateurs réels",
+                    "Retours haptiques intégrés pour améliorer l'engagement tactile",
+                    "Design system documenté pour assurer la cohérence",
+                    "Application déployée et utilisée en production"
+                ],
+                learnings: "Ce projet m'a appris l'importance de tester tôt et souvent. Les retours haptiques, initialement considérés comme un détail, se sont révélés être un différenciateur clé de l'expérience utilisateur."
+            },
+            designProcess: {
+                description: "Design complet sur Figma, du wireframe au prototype interactif.",
+                screens: [
+                    {
+                        name: "Écran d'accueil",
+                        maquette: "images/mockups/tomexplore-home-maquette.png",
+                        resultat: "images/mockups/home2.png"
+                    },
+                    {
+                        name: "Page Explorer",
+                        maquette: "images/mockups/tomexplore-explorer-maquette.png",
+                        resultat: "images/mockups/home1.png"
+                    }
+                ]
+            }
+        },
+        {
             id: "tripenarvor",
-            title: "TripEnArvor",
-            description: "Un site web pour trouver et poster des activités dans des villes françaises.",
-            longDescription: "TripEnArvor est une plateforme collaborative permettant aux utilisateurs de découvrir et de partager des activités touristiques et culturelles en Bretagne. Conçu pour valoriser le patrimoine local, le site offre une interface intuitive pour rechercher des points d'intérêt par ville ou par catégorie.",
-            features: [
-                "Recherche d'activités par géolocalisation",
-                "Système de publication d'annonces par les utilisateurs",
-                "Gestion de profil et favoris",
-                "Interface responsive et accessible"
-            ],
+            title: "TripEnArvor — Plateforme d'activités touristiques",
+            description: "Concevoir une interface collaborative pour découvrir et partager des activités en Bretagne. Maquettage Figma, approche centrée utilisateur et itérations sur l'expérience de recherche.",
+            longDescription: "TripEnArvor est une plateforme collaborative permettant aux utilisateurs de découvrir et de partager des activités touristiques et culturelles en Bretagne. J'ai mené le maquettage complet sous Figma avec une approche centrée utilisateur, avant de développer l'interface responsive.",
             image: "images/tripenarvor.png",
             tags: ["Php", "Css", "Figma", "Agile"],
             repoLink: "https://github.com/LucasOtw",
             liveLink: "#",
             category: "universitaire",
             categoryDisplay: "Universitaire",
-            roles: [
-                "Maquettage de l'interface",
-                "Développement Front-end",
-                "Développement Back-end"
-            ]
-        },
-        {
-            id: "tomexplore",
-            title: "TomExplore",
-            description: "Application pour créer son voyage en Europe en 2min !",
-            longDescription: "TomExplore révolutionne la planification de voyage en permettant de générer un itinéraire complet en quelques minutes. L'application utilise des algorithmes intelligents pour suggérer des parcours adaptés aux préférences de l'utilisateur, tout en facilitant la réservation et l'organisation.",
-            features: [
-                "Générateur d'itinéraire intelligent",
-                "Intégration de cartes interactives",
-                "Synchronisation multi-plateforme (Mobile/Web)",
-                "Aprend à vous connaitre"
-            ],
-            image: "images/TomExplore.jpeg",
-            tags: ["Ionic", "React", "Figma", "Css", "Clickup"],
-            repoLink: "https://github.com/LucasOtw",
-            liveLink: "#",
-            category: "entreprise",
-            categoryDisplay: "Entreprise",
-            imgClass: "img-tomexplore",
-            roles: [
-                "Design UX/UI",
-                "Développement Mobile",
-                "Intégration API"
-            ]
+            caseStudy: {
+                challenge: "Créer une plateforme web où les habitants et touristes peuvent facilement découvrir et partager des activités en Bretagne, avec une expérience de recherche intuitive et un système de publication accessible.",
+                role: "UX/UI Designer & Développeur Full-stack — maquettage complet, développement front-end et back-end.",
+                duration: "Projet universitaire — 4 mois",
+                process: [
+                    {
+                        step: "Recherche",
+                        title: "Analyse des besoins",
+                        description: "Étude des plateformes existantes (TripAdvisor, Le Routard) pour identifier les points de friction. Définition des besoins utilisateurs : recherche rapide, publication simple, navigation par localisation."
+                    },
+                    {
+                        step: "Conception",
+                        title: "Maquettage sous Figma",
+                        description: "Wireframes basse fidélité puis maquettes haute fidélité. Travail sur l'architecture d'information et la hiérarchie visuelle pour mettre en avant les activités."
+                    },
+                    {
+                        step: "Développement",
+                        title: "Intégration responsive",
+                        description: "Développement de l'interface en HTML/CSS/PHP avec une approche mobile-first. Système de filtres par géolocalisation et catégories."
+                    },
+                    {
+                        step: "Itération",
+                        title: "Retours et ajustements",
+                        description: "Tests avec les membres de l'équipe et ajustements de l'interface basés sur les retours. Amélioration de la lisibilité et de la navigation."
+                    }
+                ],
+                results: [
+                    "Interface maquettée et développée de A à Z",
+                    "Expérience de recherche fluide par ville et catégorie",
+                    "Design responsive testé sur mobile et desktop",
+                    "Projet livré dans les délais en méthode Agile"
+                ],
+                learnings: "Premier projet où j'ai pu mener le design de bout en bout. J'ai compris l'importance de maquetter avant de coder — les itérations sur Figma sont bien plus rapides que dans le code."
+            },
+            designProcess: {
+                description: "Maquettage complet sous Figma avec une approche centrée utilisateur.",
+                screens: [
+                    {
+                        name: "Page d'accueil",
+                        maquette: "images/mockups/tripenarvor-home-maquette.png",
+                        resultat: "images/mockups/tripenarvor-home-resultat.png"
+                    },
+                    {
+                        name: "Page activité",
+                        maquette: "images/mockups/tripenarvor-activite-maquette.png",
+                        resultat: "images/mockups/tripenarvor-activite-resultat.png"
+                    }
+                ]
+            }
         },
         {
             id: "deeppace",
-            title: "DeepPace",
-            description: "Tableau de bord avec analyse de vos données Strava",
-            longDescription: "DeepPace est un tableau de bord analytique avancé pour les coureurs et cyclistes utilisant Strava. Il permet de visualiser la progression, d'analyser les zones de fréquence cardiaque et de prédire les performances futures grâce à des modèles de données personnalisés.",
-            features: [
-                "Connexion sécurisée via l'API Strava",
-                "Graphiques interactifs de performance",
-                "Analyse des tendances sur le long terme",
-                "Comparaison avec les objectifs personnels"
-            ],
+            title: "DeepPace — Dashboard analytique pour sportifs",
+            description: "Concevoir un tableau de bord lisible et engageant pour visualiser des données sportives complexes. Travail sur la hiérarchie visuelle, la data visualization et l'expérience utilisateur.",
+            longDescription: "DeepPace est un tableau de bord analytique avancé pour les coureurs et cyclistes utilisant Strava. Le défi principal : rendre des données complexes lisibles et engageantes à travers une hiérarchie visuelle claire et des graphiques interactifs.",
             image: "images/deeppace.png",
             tags: ["Vue.JS", "Laravel", "API"],
             repoLink: "https://github.com/LucasOtw",
             liveLink: "#",
             category: "perso",
             categoryDisplay: "Personnel",
+            caseStudy: {
+                challenge: "Les sportifs utilisant Strava accumulent des montagnes de données mais peinent à en extraire des insights utiles. Comment rendre ces données complexes lisibles, engageantes et actionnables ?",
+                role: "Designer & Développeur Full-stack — conception de la data visualization et développement.",
+                duration: "Projet personnel — en cours",
+                process: [
+                    {
+                        step: "Recherche",
+                        title: "Comprendre les sportifs",
+                        description: "Analyse des besoins des coureurs et cyclistes : quelles métriques comptent vraiment ? Étude des dashboards existants (Strava, Garmin Connect) pour identifier les manques."
+                    },
+                    {
+                        step: "Conception",
+                        title: "Hiérarchie visuelle des données",
+                        description: "Travail sur la priorisation de l'information : les données les plus importantes en premier, les détails accessibles en profondeur. Choix des types de graphiques adaptés à chaque métrique."
+                    },
+                    {
+                        step: "Prototypage",
+                        title: "Maquettes du dashboard",
+                        description: "Prototypage des vues principales : tableau de bord synthétique, analyse détaillée par activité, comparaison des performances dans le temps."
+                    },
+                    {
+                        step: "Développement",
+                        title: "Intégration & data visualization",
+                        description: "Développement avec Vue.js et Laravel, intégration de l'API Strava. Création de graphiques interactifs avec gestion des états de chargement."
+                    }
+                ],
+                results: [
+                    "Dashboard lisible avec hiérarchie visuelle claire",
+                    "Graphiques interactifs adaptés à chaque type de donnée",
+                    "Connexion sécurisée via l'API Strava",
+                    "Interface responsive pour consultation mobile"
+                ],
+                learnings: "La data visualization est un exercice de design à part entière. Le choix du bon type de graphique peut transformer une donnée confuse en un insight immédiatement compréhensible."
+            }
+        },
+        {
+            id: "streaming",
+            title: "Plateforme de streaming",
+            description: "Comment concevoir une interface de streaming claire et intuitive sur tous les écrans ? Responsive design, hiérarchie de contenu et navigation simplifiée pour une expérience fluide multi-appareils.",
+            longDescription: "Conception et développement d'un site de streaming multi-appareils. Le projet met l'accent sur la hiérarchie visuelle du contenu, le responsive design pour une expérience fluide sur tous les écrans, et une navigation simplifiée. Maquettage complet sous Figma avant intégration.",
+            features: [
+                "Responsive design multi-appareils",
+                "Hiérarchie visuelle et navigation intuitive",
+                "Maquettage complet sous Figma",
+                "Gestion du versionnage"
+            ],
+            image: "images/streaming.png",
+            tags: ["HTML/CSS", "Figma", "Trello"],
+            repoLink: "https://github.com/LucasOtw",
+            liveLink: "#",
+            category: "universitaire",
+            categoryDisplay: "Universitaire",
             roles: [
-                "Architecture Fullstack",
+                "Conception UX/UI",
                 "Développement Front-end",
-                "Visualisation de données"
+                "Gestion de projet"
             ]
         },
         {
             id: "sudoku",
-            title: "Sudoku",
-            description: "Un jeu de Sudoku en C directement dans le terminal.",
-            longDescription: "Une implémentation complète et optimisée du jeu de Sudoku en langage C. Ce projet met l'accent sur l'efficacité algorithmique, avec un générateur de grilles aléatoires et un solveur intégré utilisant le backtracking.",
+            title: "Jeu interactif Sudoku",
+            description: "Conception d'un jeu interactif en C avec génération de documentation automatique. Design de l'interface et optimisation du programme.",
+            longDescription: "Conception d'un jeu interactif en C avec génération de documentation automatique via Doxygen. Le projet combine design de l'interface terminal et optimisation algorithmique, avec un générateur de grilles et un solveur intégré utilisant le backtracking.",
             features: [
                 "Génération de grilles à difficulté variable",
                 "Solveur automatique performant",
-                "Interface en ligne de commande soignée",
-                "Documentation complète avec Doxygen"
+                "Design de l'interface terminal",
+                "Documentation automatique avec Doxygen"
             ],
             image: "images/sudoku.png",
-            tags: ["C", "Terminal", "Doxygen", "Algo"],
+            tags: ["C", "Figma", "Doxygen"],
             repoLink: "https://github.com/LucasOtw",
             liveLink: "#",
             imgClass: "img-hue-1",
-            category: "perso",
-            categoryDisplay: "Personnel",
+            category: "universitaire",
+            categoryDisplay: "Universitaire",
             roles: [
                 "Développement C",
-                "Algorithmique",
+                "Design d'interface",
                 "Documentation"
             ]
         },
@@ -140,7 +262,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "Svelte": { url: "https://cdn.simpleicons.org/svelte/FF3E00", label: "Svelte" },
         "Firebase": { url: "https://cdn.simpleicons.org/firebase/FFCA28", label: "Firebase" },
         "HTML/CSS": { url: "https://cdn.simpleicons.org/html5/E34F26", label: "HTML/CSS" },
-        "Jekyll": { url: "https://cdn.simpleicons.org/jekyll/CC0000", label: "Jekyll" }
+        "Jekyll": { url: "https://cdn.simpleicons.org/jekyll/CC0000", label: "Jekyll" },
+        "Trello": { url: "https://cdn.simpleicons.org/trello/0052CC", label: "Trello" }
     };
 
     // Scroll Reveal Animation
@@ -178,27 +301,21 @@ document.addEventListener('DOMContentLoaded', () => {
             const article = document.createElement('article');
             article.className = 'project-card fade-in-on-scroll';
             article.dataset.category = project.category;
-            
+
             const imgClass = project.imgClass ? ` class="${project.imgClass}"` : '';
-            const tagsHtml = project.tags.map(tag => `<span>${tag}</span>`).join('');
-            
-            const badgeHtml = project.categoryDisplay ? `<span class="project-badge">${project.categoryDisplay}</span>` : '';
 
             article.innerHTML = `
-                <a href="project.html?id=${project.id}" class="project-image-link">
-                    <div class="project-image">
+                <a href="project.html?id=${project.id}" class="case-study-link">
+                    <div class="case-study-image">
                         <img src="${project.image}" alt="${project.title}" loading="lazy"${imgClass}>
-                        ${badgeHtml}
+                    </div>
+                    <div class="case-study-info">
+                        <span class="case-study-category">${project.categoryDisplay}</span>
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                        <span class="case-study-cta">Voir l'étude de cas &rarr;</span>
                     </div>
                 </a>
-                <div class="project-info">
-                    <h3>${project.title}</h3>
-                    <p>${project.description}</p>
-                    <div class="tags">
-                        ${tagsHtml}
-                    </div>
-                    <a href="project.html?id=${project.id}" class="project-link">Voir le projet &rarr;</a>
-                </div>
             `;
 
             projectsContainer.appendChild(article);
@@ -292,6 +409,44 @@ document.addEventListener('DOMContentLoaded', () => {
                             ${techCardsHtml}
                         </div>
                     </div>
+
+                    ${project.designProcess ? `
+                    <div class="design-process-section">
+                        <h2>Maquettage</h2>
+                        <p class="design-process-desc">${project.designProcess.description}</p>
+
+                        <div class="design-screens">
+                            ${project.designProcess.screens.map(screen => `
+                                <div class="design-screen-block">
+                                    <h3>${screen.name}</h3>
+                                    <div class="comparison-slider">
+                                        <div class="comparison-image comparison-after">
+                                            <img src="${screen.resultat}" alt="${screen.name} — Résultat" loading="lazy">
+                                        </div>
+                                        <div class="comparison-image comparison-before">
+                                            <img src="${screen.maquette}" alt="${screen.name} — Maquette" loading="lazy">
+                                        </div>
+                                        <input type="range" min="0" max="100" value="50" class="comparison-range" aria-label="Comparer maquette et résultat pour ${screen.name}">
+                                        <div class="comparison-handle">
+                                            <div class="comparison-handle-line"></div>
+                                            <div class="comparison-handle-circle">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                                </svg>
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                                </svg>
+                                            </div>
+                                            <div class="comparison-handle-line"></div>
+                                        </div>
+                                        <div class="comparison-label comparison-label-before">Maquette</div>
+                                        <div class="comparison-label comparison-label-after">Résultat</div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
                 </div>
 
                 <div class="project-sidebar">
@@ -324,6 +479,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Projects
     renderProjects();
     renderProjectDetails();
+
+    // Initialize Comparison Sliders
+    const initComparisonSliders = () => {
+        document.querySelectorAll('.comparison-slider').forEach(slider => {
+            const range = slider.querySelector('.comparison-range');
+            const before = slider.querySelector('.comparison-before');
+            const handle = slider.querySelector('.comparison-handle');
+
+            if (!range || !before || !handle) return;
+
+            const updateSlider = (value) => {
+                before.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+                handle.style.left = value + '%';
+            };
+
+            updateSlider(range.value);
+
+            range.addEventListener('input', (e) => {
+                updateSlider(e.target.value);
+            });
+        });
+    };
+    initComparisonSliders();
 
     // Custom Cursor
     const cursor = document.createElement('div');
