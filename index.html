@@ -7,6 +7,22 @@
     <title>Lucas Torres | UX/UI Designer</title>
     <meta name="description"
         content="Portfolio de Lucas Torres, Designer UX/UI spécialisé dans les interfaces mobiles et le design d'interaction.">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="canonical" href="https://lucas-torres.com/">
+    <meta property="og:title" content="Lucas Torres | UX/UI Designer">
+    <meta property="og:description" content="Portfolio de Lucas Torres, Designer UX/UI spécialisé dans les interfaces mobiles et le design d'interaction.">
+    <meta property="og:image" content="https://lucas-torres.com/images/photo1.jpeg">
+    <meta property="og:url" content="https://lucas-torres.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lucas Torres">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lucas Torres | UX/UI Designer">
+    <meta name="twitter:description" content="Portfolio de Lucas Torres, Designer UX/UI spécialisé dans les interfaces mobiles et le design d'interaction.">
+    <meta name="twitter:image" content="https://lucas-torres.com/images/photo1.jpeg">
+    <meta name="theme-color" content="#2563eb">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +40,23 @@
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#journey">Parcours</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="LucasCv.pdf" download="Lucas_Torres_CV.pdf">CV</a></li>
             </ul>
         </nav>
         <a href="index.html" class="mobile-logo">Lucas Torres</a>
+        <button class="mobile-menu-toggle" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="#work">Projets</a></li>
+                <li><a href="#approche">Approche</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#journey">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="LucasCv.pdf" download="Lucas_Torres_CV.pdf">CV</a></li>
+            </ul>
+        </div>
         <button class="theme-toggle" aria-label="Changer le thème">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -70,7 +100,54 @@
                 <h2 class="section-title">Études de cas</h2>
             </div>
             <div class="projects-grid">
-                <!-- Les projets sont générés dynamiquement par script.js -->
+                <article class="project-card fade-in-on-scroll" data-category="entreprise">
+                    <a href="projets/tomexplore.html" class="case-study-link">
+                        <div class="case-study-image">
+                            <picture>
+                                <source srcset="images/TomExplore.webp" type="image/webp">
+                                <img src="images/TomExplore.jpeg" alt="TomExplore — application de planification de voyage" loading="lazy" class="img-tomexplore" width="600" height="450">
+                            </picture>
+                        </div>
+                        <div class="case-study-info">
+                            <span class="case-study-category">Entreprise</span>
+                            <h3>TomExplore — Concevoir l'expérience de planification de voyage</h3>
+                            <p>Comment simplifier la planification de voyage pour des utilisateurs pressés ? Recherche utilisateur, prototypage itératif et design d'interaction haptique pour créer une expérience mobile intuitive.</p>
+                            <span class="case-study-cta">Voir l'étude de cas &rarr;</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card fade-in-on-scroll" data-category="universitaire">
+                    <a href="projets/tripenarvor.html" class="case-study-link">
+                        <div class="case-study-image">
+                            <picture>
+                                <source srcset="images/tripenarvor.webp" type="image/webp">
+                                <img src="images/tripenarvor.png" alt="TripEnArvor — plateforme d'activités touristiques en Bretagne" loading="lazy" width="600" height="450">
+                            </picture>
+                        </div>
+                        <div class="case-study-info">
+                            <span class="case-study-category">Universitaire</span>
+                            <h3>TripEnArvor — Plateforme d'activités touristiques</h3>
+                            <p>Concevoir une interface collaborative pour découvrir et partager des activités en Bretagne. Maquettage Figma, approche centrée utilisateur et itérations sur l'expérience de recherche.</p>
+                            <span class="case-study-cta">Voir l'étude de cas &rarr;</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card fade-in-on-scroll" data-category="perso">
+                    <a href="projets/deeppace.html" class="case-study-link">
+                        <div class="case-study-image">
+                            <picture>
+                                <source srcset="images/deeppace.webp" type="image/webp">
+                                <img src="images/deeppace.png" alt="DeepPace — dashboard analytique pour sportifs" loading="lazy" width="600" height="450">
+                            </picture>
+                        </div>
+                        <div class="case-study-info">
+                            <span class="case-study-category">Personnel</span>
+                            <h3>DeepPace — Dashboard analytique pour sportifs</h3>
+                            <p>Concevoir un tableau de bord lisible et engageant pour visualiser des données sportives complexes. Travail sur la hiérarchie visuelle, la data visualization et l'expérience utilisateur.</p>
+                            <span class="case-study-cta">Voir l'étude de cas &rarr;</span>
+                        </div>
+                    </a>
+                </article>
             </div>
             <div class="view-all-projects">
                 <a href="projects.html" class="btn btn-outline">Voir toutes les études de cas</a>
@@ -119,84 +196,6 @@
                     <p>
                         Je développe actuellement une spécialisation en UX/UI design, notamment autour des interfaces mobiles et du design haptique.
                     </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="outils" class="outils container section-padding">
-            <h2 class="section-title fade-in-on-scroll">Outils & Méthodes</h2>
-            <div class="outils-grid fade-in-on-scroll">
-                <div class="outil-category">
-                    <h3>Design & Prototypage</h3>
-                    <div class="outil-items">
-                        <div class="outil-card">
-                            <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma">
-                            <span>Figma</span>
-                        </div>
-                        <div class="outil-card">
-                            <span>Wireframing</span>
-                        </div>
-                        <div class="outil-card">
-                            <span>Prototypage interactif</span>
-                        </div>
-                        <div class="outil-card">
-                            <span>Design System</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="outil-category">
-                    <h3>Recherche & Tests</h3>
-                    <div class="outil-items">
-                        <div class="outil-card">
-                            <span>Tests utilisateurs</span>
-                        </div>
-                        <div class="outil-card">
-                            <span>Entretiens</span>
-                        </div>
-                        <div class="outil-card">
-                            <span>Personas</span>
-                        </div>
-                        <div class="outil-card">
-                            <span>Audit heuristique</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="outil-category">
-                    <h3>Gestion de projet</h3>
-                    <div class="outil-items">
-                        <div class="outil-card">
-                            <img src="https://cdn.simpleicons.org/clickup/7B68EE" alt="ClickUp">
-                            <span>ClickUp</span>
-                        </div>
-                        <div class="outil-card">
-                            <img src="https://cdn.simpleicons.org/trello/0052CC" alt="Trello">
-                            <span>Trello</span>
-                        </div>
-                        <div class="outil-card">
-                            <span>Agile / Scrum</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="outil-category">
-                    <h3>Intégration</h3>
-                    <div class="outil-items">
-                        <div class="outil-card">
-                            <img src="https://cdn.simpleicons.org/react/2563eb" alt="React">
-                            <span>React</span>
-                        </div>
-                        <div class="outil-card">
-                            <img src="https://cdn.simpleicons.org/ionic/3880FF" alt="Ionic">
-                            <span>Ionic</span>
-                        </div>
-                        <div class="outil-card">
-                            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML/CSS">
-                            <span>HTML/CSS</span>
-                        </div>
-                        <div class="outil-card">
-                            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind">
-                            <span>Tailwind</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -263,27 +262,43 @@
                 </p>
                 <a href="mailto:lucas_torres14@icloud.com"
                     class="btn btn-primary big-btn">lucas_torres14@icloud.com</a>
-
-                <footer class="footer">
-                    <p>&copy; 2026 Lucas Torres. Fait avec ♥️</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/lucastorres14/">LinkedIn</a>
-                        <a href="https://github.com/LucasOtw">GitHub</a>
-                        <a href="https://x.com/_LuCaS_tS_">Twitter</a>
-                    </div>
-                </footer>
             </div>
         </section>
     </main>
 
-    <!-- CV Download Popup -->
-    <div class="cv-popup" id="cvPopup">
-        <button class="cv-popup-close" id="cvPopupClose">&times;</button>
-        <h4>Téléchargez mon CV</h4>
-        <p>Découvrez mon parcours et mes compétences en détail.</p>
-        <a href="LucasCv.pdf" download="Lucas_Torres_CV.pdf" class="btn btn-primary">Télécharger CV</a>
-    </div>
+    <footer class="footer container">
+        <p>&copy; 2026 Lucas Torres. Fait avec soin</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/lucastorres14/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/LucasOtw" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://x.com/_LuCaS_tS_" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+    </footer>
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lucas Torres",
+        "jobTitle": "UX/UI Designer",
+        "url": "https://lucas-torres.com",
+        "email": "lucas_torres14@icloud.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/lucastorres14/",
+            "https://github.com/LucasOtw",
+            "https://x.com/_LuCaS_tS_"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "TomExplore"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "IUT Lannion"
+        },
+        "knowsAbout": ["UX Design", "UI Design", "Recherche utilisateur", "Prototypage", "Figma", "Design d'interaction"]
+    }
+    </script>
     <script src="script.js"></script>
 </body>
 

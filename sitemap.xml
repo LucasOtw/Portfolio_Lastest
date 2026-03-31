@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://lucas-torres.com/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lucas-torres.com/projects.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucas-torres.com/projets/tomexplore.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucas-torres.com/projets/tripenarvor.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucas-torres.com/projets/deeppace.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <priority>0.9</priority>
+  </url>
+</urlset>
