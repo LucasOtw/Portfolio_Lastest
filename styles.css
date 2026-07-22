@@ -1713,6 +1713,47 @@ ul {
     }
 }
 
+/* App showcase (three phone screens) */
+.app-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 3rem 0;
+}
+
+.app-showcase-item {
+    text-align: center;
+    margin: 0;
+}
+
+.app-showcase-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.app-showcase-item figcaption p {
+    color: var(--secondary-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.app-showcase-item img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+    .app-showcase {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
 /* Meta bar (role, duration, tools) */
 .cs-meta {
     display: grid;
