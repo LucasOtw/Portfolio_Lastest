@@ -1676,6 +1676,43 @@ ul {
    CASE STUDY PAGE
    =========================================== */
 
+/* Key figures band */
+.cs-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.cs-stat-value {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    line-height: 1.2;
+}
+
+.cs-stat-label {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+}
+
+@media (max-width: 768px) {
+    .cs-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+}
+
 /* Meta bar (role, duration, tools) */
 .cs-meta {
     display: grid;
