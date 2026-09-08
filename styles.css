@@ -2240,8 +2240,8 @@ ul {
     }
 
     .cursor.is-hover {
-        width: 52px;
-        height: 52px;
+        width: 46px;
+        height: 46px;
         background-color: color-mix(in srgb, var(--accent-color) 12%, transparent);
     }
 
@@ -2251,16 +2251,17 @@ ul {
     }
 
     .cursor.is-view {
-        width: 88px;
-        height: 88px;
-        background-color: var(--accent-color);
-        border-color: var(--accent-color);
+        width: 60px;
+        height: 60px;
+        background-color: color-mix(in srgb, var(--accent-color) 85%, transparent);
+        border-color: transparent;
+        backdrop-filter: blur(2px);
     }
 
     .cursor::after {
         content: 'Voir';
         font-family: var(--font-sans);
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 600;
         letter-spacing: 0.04em;
         color: #fff;
@@ -2448,11 +2449,11 @@ html.is-loading:not(.is-loaded) .hero h1 .word-inner {
 }
 
 .case-study-link:hover .case-study-image {
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="dark"] .case-study-link:hover .case-study-image {
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* --- Halo qui suit la souris sur les étapes de l'approche --- */

@@ -224,8 +224,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const r = image.getBoundingClientRect();
                 const x = (e.clientX - r.left) / r.width - 0.5;
                 const y = (e.clientY - r.top) / r.height - 0.5;
-                image.style.setProperty('--rx', `${x * 8}deg`);
-                image.style.setProperty('--ry', `${-y * 8}deg`);
+                image.style.setProperty('--rx', `${x * 3.5}deg`);
+                image.style.setProperty('--ry', `${-y * 3.5}deg`);
             });
             link.addEventListener('mouseleave', () => {
                 image.style.setProperty('--rx', '0deg');
